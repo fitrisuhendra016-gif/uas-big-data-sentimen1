@@ -3,10 +3,11 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-model = load_model("../app_sentimen/bilstm_model.keras")
-
-with open("../app_sentimen/tokenizer.pkl", "rb") as f:
+APP_FOLDER = "../app_sentimen"  # naik 1 level dari src/ ke root
+model = load_model(f"{APP_FOLDER}/bilstm_model.keras")
+with open(f"{APP_FOLDER}/tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
+
 
 max_len = 100
 
