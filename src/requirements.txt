@@ -1,4 +1,7 @@
 streamlit
-tensorflow==2.13.1
+tensorflow
 numpy
+pandas
 pickle-mixin
+gensim
+
