@@ -1,7 +1,2 @@
-streamlit
-tensorflow
-numpy
-pandas
-pickle-mixin
-gensim
+
 
